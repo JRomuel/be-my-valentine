@@ -152,11 +152,6 @@
     color: #fff;
   }
 
-  
-  .center {
-    margin-bottom: 16px;
-  }
-
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
@@ -173,7 +168,7 @@
   }
 
   .center {
-    padding: 8rem 0 6rem;
+    margin-bottom: 16px;
   }
 
   .center::before {
