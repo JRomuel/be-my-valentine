@@ -11,6 +11,7 @@ export default function Home() {
   
   const [buttonText, setButtonText] = useState('No');
   const [mainImage, setMainImage] = useState('/cat-giving-flower.jpg');
+  const [mainText, setmainText] = useState('Will you be my Valentine?');
   let [count, setCount] = useState(0);
   const button = useRef(null);
 
@@ -29,7 +30,9 @@ export default function Home() {
   const sheSaidYes = () => {
     
     setMainImage('/in-loved-cat.jpg');
+    setmainText('Yeyyy!!!!');
     animate(button.current, {opacity: 0});
+
   };
 
   
@@ -50,7 +53,7 @@ export default function Home() {
         />
 
       </div>
-      <h1 className={styles.title}>Will you be my Valentine?</h1>
+      <h1 className={styles.title}>{mainText}</h1>
       <div className={styles.buttons}>
           <button type="button" onClick={sheSaidYes} className={styles.yes}>Yes</button>
           <motion.button ref={button} type="button" onClick={onMouseEnter} onMouseEnter={onMouseEnter} className={styles.no}>{buttonText}</motion.button>
