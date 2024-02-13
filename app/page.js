@@ -29,7 +29,7 @@ export default function Home() {
   const sheSaidYes = () => {
     
     setMainImage('/in-loved-cat.jpg');
-
+    animate(button.current, {opacity: 0});
   };
 
   
